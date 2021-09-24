@@ -1,0 +1,141 @@
+.day-night{
+    border-radius: 7px;
+}
+.day-night i{
+    font-size: 26px;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: all 0.5s;
+    border-radius: 7px;
+}
+.sun{
+    color: #ff7b00;
+}
+.moon{
+    color: #0077ff;
+}
+.day-night i.active{
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* night mode */
+
+main.night{
+    transition: all 0.5s ease;
+    background-color: #212529;
+}
+main.night .panel{
+    background-color: #212529;
+    box-shadow: 0 0 5px #55637e;
+}
+main.night nav{
+    box-shadow: 0 0 5px #55637e;
+}
+main.night .nav__button{
+    background-color: #0077ff;
+    color: #fff;
+}
+main.night .sun{
+    color: yellow;
+}
+main.night .service__blog li{
+    color: #bbc3cc;
+}
+main.night .nav__button:hover{
+    background: #212529;
+    color: #ebeff5;
+}
+main.night #reg{
+    background-color: #ff6060;
+}
+main.night #reg:hover{
+    background: #212529;
+}
+main.night .contact__text, main.night .contact__card__title, main.night .home__header__text, main.night .home__footer{
+    color: #8b948e;
+}
+main.night .contact__content, main.night .home__titles, main.night .home__text, main.night .home__accordion__title, main.night .home__features__card, main.night .education__box__content, main.night .wehave__text, main.night .rateus__btn, main.night .rateus__post__text, main.night .rateus__post__exit{
+    color: #dee7ee;
+}
+main.night .home__accordion, main.night .link__github {
+    color: #fff;
+}
+.main.night .contact__card:hover{
+    background: #253d69;
+    transform: scale(1.05);
+}
+main.night .education__box__year{
+    background: #253d69;
+    color: #dee7ee;
+}
+
+/* day mode */
+
+main.day .card{
+    background: rgb(156, 156, 160);
+}
+main.day{
+    transition: all 0.5s ease;
+    background-color: #ebf5ff;
+}
+main.day .panel{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.350);
+    background-color: #ebf5ff;
+}
+main.day nav{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.350);
+}
+main.day .card__img{
+    box-shadow: 5px 10px 20px #2a4a58;
+}
+main.day .container .card .box{
+    color: green;
+    background: rgb(79, 73, 253);
+    border: 5px double rgb(0, 0, 255);
+}
+main.day .card__word{
+    text-shadow: none;
+}
+main.day .about__button{
+    color: rgb(32, 32, 92); 
+    box-shadow: none;
+}
+main.day .about, main.day .contact{
+    background: url('../img/gamingbackground.jpg')no-repeat center / cover;
+}
+.main.day .contact__blog{
+    background: #9fa6b860;
+    color: #36393b;
+}
+.main.day .contact__card:hover{
+    background: #585e80;
+    transform: scale(1.05);
+    color: #dfdfdf;
+}
+
+/* messangers Icon */
+
+.teg{
+    color: #0088cc;
+    border: 1px solid #0088cc;
+}
+.face{
+    color: #1877F2;
+    border: 1px solid #1877F2;
+}
+.inst{
+    color: #E4405F;
+    border: 1px solid #E4405F;
+}
+.yt{
+    color: #CD201F;
+    border: 1px solid #CD201F;
+}
